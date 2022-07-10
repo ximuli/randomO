@@ -3,3 +3,7 @@
 export const genarateRandomNum = (n: number) => {
   return Math.floor(Math.random() * n)
 }
+
+export const isMobile = ():boolean => {
+  return 'ontouchstart' in document.documentElement
+}
