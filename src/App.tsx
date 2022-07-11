@@ -2,6 +2,7 @@ import React from 'react'
 import './App.scss'
 import games from './assets/data/games'
 import CyberpunkBtn from './components/CyberpunkBtn'
+import GithubCorner from './components/GithubCorner'
 import { genarateRandomNum } from '@/utils/common'
 
 function App() {
@@ -13,7 +14,7 @@ function App() {
   }
   return (
     <div className="App">
-      {/* <button className='btn' onClick={clickToOpen}>随机打开一个游戏</button> */}
+      <GithubCorner />
       <CyberpunkBtn openNewPage={ clickToOpen } />
     </div>
   )
