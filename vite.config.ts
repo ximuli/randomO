@@ -11,6 +11,14 @@ export default defineConfig({
       '@': path.resolve('src')
     }
   },
+  css: {
+    postcss: {
+      plugins: [
+        // https://github.com/postcss/autoprefixer
+        require('autoprefixer')({})
+      ]
+    }
+  },
   server: {
     host: '0.0.0.0',
     open: '/'

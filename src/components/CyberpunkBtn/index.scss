@@ -16,6 +16,7 @@
     outline: transparent;
     position: relative;
     cursor: pointer;
+    user-select: none;
   }
   &.btn {
     z-index: 99;
