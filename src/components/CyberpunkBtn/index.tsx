@@ -24,18 +24,18 @@ export default function CyberpunkBtn(props: IProps) {
     clearActiveClass()
     isMobile() && props.openNewPage()
   }
-  const clickHandler = () => {
-    props.openNewPage()
+  const onPointerEnter = (e: React.PointerEvent) => { 
+    isMobile() || addActiveClass()
   }
-  const touchEndHandler = () => {
-    addActiveClass()
+  const onPointerUp = (e: React.PointerEvent) => {
+    isMobile() || props.openNewPage()
+    isMobile() && addActiveClass()
   }
   return (
     <button className={`cyberpunkBtn btn ${activeClass}`} data-text='AVAILABLE NOW'
-      onMouseEnter={addActiveClass} // PC
-      onTouchEnd={touchEndHandler} // Mobile
+      onPointerEnter={onPointerEnter}
+      onPointerUp={onPointerUp }
       onAnimationEnd={animationEndHandler}
-      {...isMobile() ? {} : {onClick:clickHandler}}
     >
       AVAILABLE NOW
     </button>

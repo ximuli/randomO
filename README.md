@@ -4,6 +4,17 @@
 
 [预览地址](https://ximuli.github.io/randomO/)
 
+# 特点
+
+## 使用 PoniterEvents
+
+一套统一的事件模型，支持PC端、移动端或是其他各种触摸屏设备。
+
+参考链接：
+1. [用 PointerEvent 代替 MouseEvent 和 TouchEvent](https://mp.weixin.qq.com/s/QDLVPMkktq4ViDyqFwRF0A)
+2. [MDN Pointer_events](https://developer.mozilla.org/en-US/docs/Web/API/Pointer_events)
+
+
 # Vite 项目部署 Github Pages
 
 ## 开启 Github pages 服务
