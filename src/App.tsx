@@ -3,12 +3,12 @@ import './App.scss'
 import games from './assets/data/games'
 import CyberpunkBtn from './components/CyberpunkBtn'
 import GithubCorner from './components/GithubCorner'
-import { genarateRandomNum } from '@/utils/common'
+import { generateRandomNum } from '@/utils/common'
 
 function App() {
   const clickToOpen = () => {
     const gamesLength = games.length
-    const randomIndex = genarateRandomNum(gamesLength)
+    const randomIndex = generateRandomNum(gamesLength)
     // window.open在手机端微信、Safari无效，所以改用location.href
     window.location.href = games[randomIndex].link
   }
